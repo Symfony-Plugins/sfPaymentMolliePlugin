@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.4.1" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+  <name>sfPaymentPayPalPlugin</name>
+  <channel>pear.symfony-project.com</channel>
+  <summary>
+    <![CDATA[
+    ]]>
+  </summary>
+  <description>
+    <![CDATA[
+    ]]>
+  </description>
+  <lead>
+    <name>Marijn Huizendveld</name>
+    <user>marijn</user>
+    <email>marijn@round84.com</email>
+    <active>yes</active>
+  </lead>
+  <date>##CURRENT_DATE##</date>
+  <version>
+    <release>0.2.0</release>
+    <api>0.2.0</api>
+  </version>
+  <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+  </stability>
+  <license uri="http://www.symfony-project.org/license">MIT license</license>
+  <notes>
+    <![CDATA[
+      * marijn: Initial release of the plugin.
+    ]]>
+  </notes>
+  <contents>
+    <dir name="/">
+      <file install-as="README" role="doc" name="README.markdown" />
+      <file install-as="LICENSE" role="doc" name="LICENSE.markdown" />
+      <dir name="config">
+        <dir name="defaults">
+          <file role="data" name="payment_services.xml">
+            <tasks:replace from="@version@" to="version" type="package-info" />
+          </file>
+        </dir>
+      </dir>
+      <dir name="lib">
+      </dir>
+    </dir>
+  </contents>
+  <dependencies>
+    <required>
+      <php>
+        <min>5.3.0</min>
+      </php>
+      <pearinstaller>
+        <min>1.4.1</min>
+      </pearinstaller>
+      <package>
+        <name>symfony</name>
+        <channel>pear.symfony-project.com</channel>
+        <min>1.4.0</min>
+      </package>
+      <package>
+        <name>sfPaymentPlugin</name>
+        <channel>pear.symfony-project.com</channel>
+        <min>0.2.0</min>
+      </package>
+    </required>
+  </dependencies>
+  <phprelease></phprelease>
+  <changelog>
+    <release>
+      <version>
+        <release>0.1.0</release>
+        <api>0.1.0</api>
+      </version>
+      <stability>
+        <release>alpha</release>
+        <api>alpha</api>
+      </stability>
+      <date>2009-07-24</date>
+      <license uri="http://www.symfony-project.org/license">MIT license</license>
+      <notes>
+        <![CDATA[
+          * Marijn: Initial release of the plugin.
+        ]]>
+      </notes>
+    </release>
+  </changelog>
+</package>
